@@ -1,32 +1,68 @@
-# FluxAnimate
+# Shadcn-UI Template Usage Instructions
 
-GIF & Image Processing Platform with AI
+## technology stack
 
-## Features
+This project is built with:
 
-- GIF Maker & Editor
-- Format Conversion (GIF, WebP, APNG, AVIF, MP4)
-- AI-Powered Tools (Upscaling, Background Removal, Frame Interpolation)
-- Advanced Effects & Filters
-- GitHub Export Integration
-
-## Tech Stack
-
-- React + TypeScript
-- shadcn-ui + Tailwind CSS
 - Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-## Installation
+All shadcn/ui components have been downloaded under `@/components/ui`.
 
-```bash
-pnpm install
+## File Structure
+
+- `index.html` - HTML entry point
+- `vite.config.ts` - Vite configuration file
+- `tailwind.config.js` - Tailwind CSS configuration file
+- `package.json` - NPM dependencies and scripts
+- `src/app.tsx` - Root component of the project
+- `src/main.tsx` - Project entry point
+- `src/index.css` - Existing CSS configuration
+- `src/pages/Index.tsx` - Home page logic
+
+## Components
+
+- All shadcn/ui components are pre-downloaded and available at `@/components/ui`
+
+## Styling
+
+- Add global styles to `src/index.css` or create new CSS files as needed
+- Use Tailwind classes for styling components
+
+## Development
+
+- Import components from `@/components/ui` in your React components
+- Customize the UI by modifying the Tailwind configuration
+
+## Note
+
+- The `@/` path alias points to the `src/` directory
+- In your typescript code, don't re-export types that you're already importing
+
+# Commands
+
+**Install Dependencies**
+
+```shell
+pnpm i
+```
+
+**Add Dependencies**
+
+```shell
+pnpm add some_new_dependency
+
+**Start Preview**
+
+```shell
 pnpm run dev
 ```
 
-## Build
+**To build**
 
-```bash
+```shell
 pnpm run build
 ```
-
-Generated with ❤️ by FluxAnimate
